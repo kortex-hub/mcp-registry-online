@@ -1,0 +1,39 @@
+{
+   "servers":[
+     {
+       "name":"GitHub MCP server",
+       "description":"GitHub's official MCP Server",
+       "repository":{
+         "url":"https://github.com/github/github-mcp-server",
+         "source":"github"
+       },
+       "version":"0.11.0",
+       "remotes":[
+         {
+           "transport_type":"streamable",
+           "url":"https://api.githubcopilot.com/mcp",
+           "headers":[
+             {
+               "name":"Bearer",
+               "description":"Token for authentication https://github.com/settings/personal-access-tokens/new",
+               "is_required":true,
+               "is_secret":true
+             }
+           ]
+         }
+       ],
+       "_meta": {
+         "io.modelcontextprotocol.registry/official": {
+           "id": "123e4567-e89b-12d3-a456-426614172000",
+           "published_at": "2025-08-01T00:00:00Z",
+           "updated_at": "2025-08-01T00:00:00Z",
+           "is_latest": false
+         }
+       }
+     }
+   ],
+   "metadata":{
+      "next_cursor":"",
+      "count":1
+   }
+}
