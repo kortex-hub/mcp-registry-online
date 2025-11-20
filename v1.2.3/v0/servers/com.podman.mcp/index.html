@@ -12,8 +12,11 @@
 		"remotes": [
 			{
 				"type": "stdio",
-				"command": "podman-mcp-server",
-				"args": []
+				"command": "/opt/homebrew/lib/node_modules/podman-mcp-server/node_modules/podman-mcp-server-darwin-arm64/bin/podman-mcp-server-darwin-arm64",
+				"args": [],
+				"env": {
+					"PATH": "/opt/homebrew/bin:/opt/podman/bin:/usr/local/bin:/usr/bin:/bin"
+				}
 			}
 		]
 	},
