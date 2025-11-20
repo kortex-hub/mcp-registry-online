@@ -1,7 +1,7 @@
 {
 	"server": {
 		"$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
-		"name": "com.podman.mcp",
+		"name": "io.podman.mcp",
 		"description": "MCP Server for Podman container management - create, read, update, and delete containers",
 		"repository": {
 			"id": "podman-mcp-server",
@@ -12,11 +12,8 @@
 		"remotes": [
 			{
 				"type": "stdio",
-				"command": "/opt/homebrew/lib/node_modules/podman-mcp-server/node_modules/podman-mcp-server-darwin-arm64/bin/podman-mcp-server-darwin-arm64",
-				"args": [],
-				"env": {
-					"PATH": "/opt/homebrew/bin:/opt/podman/bin:/usr/local/bin:/usr/bin:/bin"
-				}
+				"command": "npx",
+				"args": ["-y", "podman-mcp-server@latest"]
 			}
 		]
 	},
